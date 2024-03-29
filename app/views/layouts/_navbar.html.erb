@@ -1,0 +1,44 @@
+<div style="background-color: lightskyblue;padding: 0;margin: 0px; height: 40px;">
+  
+  <%= link_to image_tag("jeep.png", style: "width: 40px; height: 40px;" ), root_path %>
+  <% if user_signed_in? %>
+    <ul style="float: right;">  
+      <li><%= link_to "New user", new_user_path %></li>
+      <li><%= link_to "Back to users", users_path %></li>
+      <li><%= button_to "Log out", destroy_user_session_path, method: :delete, class: 'button-link' %></li>
+    </ul>
+  <% end %>
+</div>
+<style>
+   ul {
+      background-color: lightskyblue;
+      overflow: hidden;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+   }
+   li {
+      float: left;
+   }
+   li a, .button-link {
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 17px;
+   }
+   li a:hover, .button-link:hover {
+      background-color: #00bfff;
+      color: black;
+   }
+   .active-link {
+      background-color: #f53319;
+      color: white;
+   }
+   .button-link {
+      border: none;
+      background-color: lightskyblue;
+      font-family: Times;
+   }
+</style>

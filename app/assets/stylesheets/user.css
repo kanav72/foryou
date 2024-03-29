@@ -1,0 +1,10 @@
+.user_show {
+  font: oblique normal bold Arial, sans-serif;
+  font-size: 20px;
+}
+
+.page_border {
+  margin: 0px auto auto auto;
+  width: 20%;
+  padding: 0px;
+}

@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<div><b>Content: </b> <%= @micropost.content %></div>
+<br>
+<div><b>Created by: </b> <%= @micropost.user.name %></div>
+<br>
+
+<div>
+  <%= link_to "Edit this micropost", edit_micropost_path(@micropost) %> |
+  <%= link_to "Back to microposts", microposts_path %>
+
+  <%= button_to "Delete this micropost", @micropost, method: :delete %>
+</div>
